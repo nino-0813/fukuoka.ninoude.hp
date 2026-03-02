@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { MapPin, Clock, MessageCircle, Instagram } from 'lucide-react';
 import { LOCATION, HOURS, LINE_URL, BASE_URL } from '@/lib/constants';
+import { DeferredMap } from '@/components/DeferredMap';
 import { JsonLd } from '@/components/JsonLd';
 import { getBreadcrumbJsonLd } from '@/lib/schema';
 
@@ -106,14 +107,7 @@ export default function AccessPage() {
           </div>
 
           <div className="h-[400px] relative curved-mask">
-            <iframe
-              src="https://www.google.com/maps?q=福岡県福岡市東区&output=embed"
-              title="福岡県福岡市東区の地図"
-              className="absolute inset-0 w-full h-full border-0"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <DeferredMap title="福岡県福岡市東区の地図" className="rounded-[inherit]" />
           </div>
         </section>
       </article>

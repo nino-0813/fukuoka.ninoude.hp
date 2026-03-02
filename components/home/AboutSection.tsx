@@ -17,11 +17,11 @@ export function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
-            <div className="rounded-[40px] overflow-hidden shadow-2xl z-10 relative aspect-[4/5]">
+            <div className="rounded-[40px] overflow-hidden shadow-2xl z-10 relative aspect-[4/5] p-10 bg-[#f5f2ed]">
               <Image
                 src="/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_135.webp"
                 alt="二の腕施術・リンパケアのイメージ"
-                className="object-cover"
+                className="object-contain"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

@@ -1,6 +1,7 @@
 import { MapPin, Clock, MessageCircle, Instagram } from 'lucide-react';
 import { LOCATION, HOURS, LINE_URL } from '@/lib/constants';
 import { SectionHeader } from '@/components/SectionHeader';
+import { DeferredMap } from '@/components/DeferredMap';
 
 export function ClinicSection() {
   return (
@@ -65,14 +66,7 @@ export function ClinicSection() {
           </div>
 
           <div className="h-[500px] md:h-auto md:min-h-[400px] relative curved-mask min-h-[400px]">
-            <iframe
-              src="https://www.google.com/maps?q=福岡県福岡市東区&output=embed"
-              title="福岡県福岡市東区の地図"
-              className="absolute inset-0 w-full h-full border-0"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <DeferredMap title="福岡県福岡市東区の地図" className="rounded-[inherit]" />
           </div>
         </div>
       </div>
