@@ -432,7 +432,7 @@ const ClinicInfo: React.FC = () => {
                   <MessageCircle size={18} />
                   <span>Line Booking</span>
                 </a>
-                <a href="https://instagram.com" className="w-14 h-14 border border-[#a67c52]/20 rounded-full flex items-center justify-center text-[#a67c52] hover:bg-[#f5f2ed] transition-all">
+                <a href="https://www.instagram.com/ninoude.fukuoka.emi/?hl=ja" className="w-14 h-14 border border-[#a67c52]/20 rounded-full flex items-center justify-center text-[#a67c52] hover:bg-[#f5f2ed] transition-all">
                   <Instagram size={24} />
                 </a>
               </div>

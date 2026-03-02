@@ -59,3 +59,32 @@ export function getBreadcrumbJsonLd(items: { name: string; url: string }[]) {
     })),
   };
 }
+
+export function getArticleJsonLd(params: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified?: string;
+  image: string;
+  authorName: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: params.title,
+    description: params.description,
+    url: params.url,
+    datePublished: params.datePublished,
+    dateModified: params.dateModified ?? params.datePublished,
+    image: params.image.startsWith('http') ? params.image : `${BASE_URL}${params.image}`,
+    author: {
+      '@type': 'Person',
+      name: params.authorName,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SALON_NAME,
+    },
+  };
+}

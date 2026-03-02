@@ -8,7 +8,7 @@ export const LOCATION = '福岡県福岡市東区の自宅サロン';
 export const HOURS = '平日・土曜 9:00～18:00 (ご希望に合わせて調整可)';
 export const TELEPHONE = '000-0000-0000';
 export const LINE_URL = 'https://line.me';
-export const INSTAGRAM_URL = 'https://instagram.com';
+export const INSTAGRAM_URL = 'https://www.instagram.com/ninoude.fukuoka.emi/?hl=ja';
 
 export const MONITOR_TYPES: MonitorType[] = [
   {
@@ -25,26 +25,33 @@ export const MONITOR_TYPES: MonitorType[] = [
     description:
       '施術風景やビフォーアフターの様子を動画で撮影し、当院のYouTubeに公開させていただける方を対象とするのがYouTubeモニターです。原則として全顔出しモニターとなります。',
     image: 'https://picsum.photos/600/400?face,beauty',
-    note: '※通常料金から 50%OFFいたします。',
   },
 ];
 
 export const MONITOR_REQUIREMENTS: MonitorRequirement[] = [
   {
     id: 1,
-    title: '下記の条件にご承諾いただける治療モニターを募集しております。',
+    title: 'モニター募集の対象',
     items: [
-      '施術前後の写真撮影や手術中の動画撮影、WEBサイトやインターネット・雑誌広告等への公開にご協力いただける方',
-      '手術日・1週間後・1ヶ月後・3ヶ月後に写真撮影にご来院いただける方 ※施術の内容で来院日程が変わる可能性があります。',
-      '原則として20歳以上の方(未成年の場合は、親権者の方がモニター施術に同意している方)',
+      '初回体験をすでに受けられた方',
+      'その後のカスタムメニュー（短期集中改善コース・挙式直前ブライダルケア等）をご利用される方',
+      '募集は5組までとなります。',
     ],
   },
   {
     id: 2,
-    title: 'モニター施術には選考がございます。',
+    title: 'ご協力いただきたいこと',
     items: [
-      'モニター施術が実施できるかについては、医師のカウンセリング・診察にて判断させていただきます。',
-      'お客様のご希望や適応により、モニター価格でご案内できないこともございます。予めご了承くださいませ。',
+      '施術前後の写真撮影、WEBサイトやSNS等への掲載にご協力いただける方',
+      '撮影・掲載内容についてご説明のうえ、ご承諾いただいた方',
+    ],
+  },
+  {
+    id: 3,
+    title: 'その他',
+    items: [
+      'モニターの適応は、カウンセリング・施術内容に応じて判断させていただきます。',
+      'ご希望やお体の状態により、モニター価格でご案内できない場合もございます。予めご了承ください。',
     ],
   },
 ];
@@ -53,8 +60,8 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 1,
     title: '振袖肉スッキリ改善',
-    beforeImg: 'https://picsum.photos/400/500?random=1',
-    afterImg: 'https://picsum.photos/400/500?random=2',
+    beforeImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_18.webp',
+    afterImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_17.webp',
     period: '3ヶ月',
     count: '8回',
     description: 'ノースリーブを自信を持って着られるようになりました。',
@@ -62,8 +69,8 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 2,
     title: '肩周りの厚みが解消',
-    beforeImg: 'https://picsum.photos/400/500?random=3',
-    afterImg: 'https://picsum.photos/400/500?random=4',
+    beforeImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_20.webp',
+    afterImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_19.webp',
     period: '2ヶ月',
     count: '5回',
     description: '埋もれていた肩甲骨が出てきて、後ろ姿が別人に。',
@@ -71,11 +78,65 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 3,
     title: '結婚式前の集中ケア',
-    beforeImg: 'https://picsum.photos/400/500?random=5',
-    afterImg: 'https://picsum.photos/400/500?random=6',
+    beforeImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_29.webp',
+    afterImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_29.webp',
     period: '1.5ヶ月',
     count: '4回',
     description: 'ドレス試着の時とは見違えるほど細くなりました！',
+  },
+  {
+    id: 4,
+    title: '二の腕・背中まわりスッキリ',
+    beforeImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_30.webp',
+    afterImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_30.webp',
+    period: '2ヶ月',
+    count: '6回',
+    description: 'タンクトップを堂々と着られるように。',
+  },
+  {
+    id: 5,
+    title: 'ブライダル二の腕ケア',
+    beforeImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_28.webp',
+    afterImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_28.webp',
+    period: '2ヶ月',
+    count: '5回',
+    description: '挙式までに理想のラインに。',
+  },
+  {
+    id: 6,
+    title: '振袖・二の腕集中ケア',
+    beforeImg: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_15.webp',
+    afterImg: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_15.webp',
+    period: '2ヶ月',
+    count: '6回',
+    description: '振袖のときの見た目が気にならなくなりました。',
+  },
+  {
+    id: 7,
+    title: '肩甲骨・二の腕まわり改善',
+    beforeImg: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_8.webp',
+    afterImg: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_8.webp',
+    period: '1.5ヶ月',
+    count: '4回',
+    description: '背中から腕まわりがすっきり。',
+  },
+  {
+    id: 8,
+    title: 'ノースリーブが着たい方のケア',
+    beforeImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_129.webp',
+    afterImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_129.webp',
+    period: '2ヶ月',
+    count: '5回',
+    description: '夏の服を楽しめるように。',
+  },
+  {
+    id: 9,
+    title: '二の腕・たるみ集中ケア',
+    beforeImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_114.webp',
+    afterImg: '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_114.webp',
+    period: '2ヶ月',
+    count: '6回',
+    description: 'たるみが気にならなくなりました。',
   },
 ];
 
@@ -83,27 +144,28 @@ export const MENU_ITEMS: MenuItem[] = [
   {
     id: 1,
     title: '初回体験コース',
-    price: '¥5,500',
+    price: '¥9,900',
     duration: '90分',
     description:
-      'カウンセリング＋全身デトックス＋二の腕集中アプローチ。まずは効果を実感してください。',
+      'まずは初回体験から。カウンセリング＋全身デトックス＋二の腕集中アプローチ。体験後はお悩みに合わせたカスタムメニューをお選びいただけます。',
     icon: 'Sparkles',
   },
   {
     id: 2,
     title: '短期集中改善コース',
-    price: '¥88,000〜',
+    price: '',
     duration: '全8回',
     description:
-      '徹底的に二の腕のセルライトと脂肪を分解し、形状記憶させる1番人気のコースです。',
+      '初回体験後にお選びいただけるカスタムメニュー。二の腕のセルライトと脂肪を分解し、形状記憶させる1番人気のコースです。',
     icon: 'Activity',
   },
   {
     id: 3,
     title: '挙式直前ブライダルケア',
-    price: '¥45,000',
+    price: '',
     duration: '全3回',
-    description: '挙式までに最短で仕上げたい方向け。背中とデコルテも同時にケアします。',
+    description:
+      '初回体験後にお選びいただけるカスタムメニュー。挙式までに最短で仕上げたい方向け。背中とデコルテも同時にケアします。',
     icon: 'Clock',
   },
 ];

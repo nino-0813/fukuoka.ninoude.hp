@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { MapPin, Clock, MessageCircle, Instagram } from 'lucide-react';
 import { LOCATION, HOURS, LINE_URL } from '@/lib/constants';
 import { SectionHeader } from '@/components/SectionHeader';
@@ -53,7 +52,7 @@ export function ClinicSection() {
                   <span>Line Booking</span>
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/ninoude.fukuoka.emi/?hl=ja"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-14 h-14 border border-[#a67c52]/20 rounded-full flex items-center justify-center text-[#a67c52] hover:bg-[#f5f2ed] transition-all"
@@ -65,13 +64,14 @@ export function ClinicSection() {
             </div>
           </div>
 
-          <div className="h-[500px] md:h-auto relative curved-mask min-h-[400px]">
-            <Image
-              src="https://picsum.photos/1000/1200?fukuoka,interior,design"
-              alt="ジプソフィル 福岡店 店内"
-              className="object-cover"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
+          <div className="h-[500px] md:h-auto md:min-h-[400px] relative curved-mask min-h-[400px]">
+            <iframe
+              src="https://www.google.com/maps?q=福岡県福岡市東区&output=embed"
+              title="福岡県福岡市東区の地図"
+              className="absolute inset-0 w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { CASE_STUDIES } from '@/lib/constants';
 import { SectionHeader } from '@/components/SectionHeader';
 
@@ -15,30 +16,50 @@ export function ResultsSection() {
               className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group border border-[#a67c52]/5"
             >
               <div className="relative overflow-hidden flex">
-                <div className="w-1/2 relative aspect-[4/5]">
-                  <Image
-                    src={study.beforeImg}
-                    alt={`${study.title} 施術前`}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <span className="absolute top-4 left-4 bg-black/40 backdrop-blur-sm text-white text-[9px] px-2 py-1 rounded uppercase tracking-widest">
-                    Before
-                  </span>
-                </div>
-                <div className="w-1/2 relative aspect-[4/5]">
-                  <Image
-                    src={study.afterImg}
-                    alt={`${study.title} 施術後`}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <span className="absolute top-4 left-4 bg-[#a67c52]/80 backdrop-blur-sm text-white text-[9px] px-2 py-1 rounded uppercase tracking-widest font-bold">
-                    After
-                  </span>
-                </div>
+                {study.beforeImg === study.afterImg ? (
+                  <div className="w-full relative aspect-[8/5]">
+                    <Image
+                      src={study.beforeImg}
+                      alt={`${study.title} 施術事例`}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <span className="absolute top-4 left-4 bg-black/40 backdrop-blur-sm text-white text-[9px] px-2 py-1 rounded uppercase tracking-widest">
+                      Before
+                    </span>
+                    <span className="absolute top-4 right-4 bg-[#a67c52]/80 backdrop-blur-sm text-white text-[9px] px-2 py-1 rounded uppercase tracking-widest font-bold">
+                      After
+                    </span>
+                  </div>
+                ) : (
+                  <>
+                    <div className="w-1/2 relative aspect-[4/5]">
+                      <Image
+                        src={study.beforeImg}
+                        alt={`${study.title} 施術前`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                      <span className="absolute top-4 left-4 bg-black/40 backdrop-blur-sm text-white text-[9px] px-2 py-1 rounded uppercase tracking-widest">
+                        Before
+                      </span>
+                    </div>
+                    <div className="w-1/2 relative aspect-[4/5]">
+                      <Image
+                        src={study.afterImg}
+                        alt={`${study.title} 施術後`}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                      <span className="absolute top-4 left-4 bg-[#a67c52]/80 backdrop-blur-sm text-white text-[9px] px-2 py-1 rounded uppercase tracking-widest font-bold">
+                        After
+                      </span>
+                    </div>
+                  </>
+                )}
               </div>
               <div className="p-8">
                 <div className="flex justify-between items-center mb-4">
@@ -52,6 +73,11 @@ export function ResultsSection() {
             </article>
           ))}
         </div>
+        <p className="text-center mt-12">
+          <Link href="/results" className="text-[#a67c52] font-bold hover:underline">
+            症例写真の詳細はこちら
+          </Link>
+        </p>
       </div>
     </section>
   );

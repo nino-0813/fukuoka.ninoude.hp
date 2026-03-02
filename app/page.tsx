@@ -11,7 +11,7 @@ import { FAQSection } from '@/components/home/FAQSection';
 export const metadata: Metadata = {
   title: '二の腕痩せ 福岡 | ジプソフィル®︎ 福岡の二の腕ダイエット専門サロン',
   description:
-    '福岡市東区の二の腕痩せ専門サロン ジプソフィル®︎。肩甲骨出し・ブライダルケアも。完全個室・完全予約制。初回体験¥5,500〜。',
+    '福岡市東区の二の腕痩せ専門サロン ジプソフィル®︎。肩甲骨出し・ブライダルケアも。完全個室・完全予約制。初回体験¥9,900。',
   openGraph: {
     title: '二の腕痩せ専門ジプソフィル®︎ | 福岡の二の腕ダイエット専門サロン',
     description:

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight, CheckCircle2, Phone, MessageCircle, Activity, BrainCircuit } from 'lucide-react';
+import { ChevronRight, CheckCircle2, MessageCircle } from 'lucide-react';
 import {
   MONITOR_TYPES,
   MONITOR_REQUIREMENTS,
@@ -14,7 +14,7 @@ import { getBreadcrumbJsonLd } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'モニター募集 | 二の腕痩せ 福岡 ジプソフィル',
   description:
-    '二の腕痩せ専門サロン ジプソフィル福岡店のモニター募集。部分モニター・YouTubeモニターで施術を特別価格でご体験いただけます。',
+    'モニター価格は初回体験済み・カスタムコースご利用の方限定。5組まで募集。二の腕痩せ専門サロン ジプソフィル福岡店。',
   openGraph: {
     title: 'モニター募集 | 二の腕痩せ専門ジプソフィル®︎ 福岡',
     url: '/monitor-recruitment',
@@ -75,22 +75,22 @@ export default function MonitorRecruitmentPage() {
                   Monitors
                 </h2>
                 <h3 className="font-serif-jp text-3xl md:text-5xl text-[#1a1a1a] leading-tight font-bold">
-                  リーズナブルな価格で
+                  モニター価格は
                   <br />
-                  治療を受けていただける
+                  初回体験済み・カスタムコース
                   <br />
-                  モニター様を募集しています。
+                  ご利用の方限定で5組まで募集。
                 </h3>
                 <div className="w-16 h-[1px] bg-[#f27d26] mb-10" aria-hidden />
                 <p className="text-lg text-[#5a5a5a] leading-loose font-serif-jp">
-                  施術前後の写真撮影や手術中の動画撮影、WEBサイトやインターネット・雑誌広告等への公開にご協力をいただける方には、モニター価格で治療を受けていただけます。
+                  初回体験をされた方のうち、その後のカスタムメニュー（短期集中コース・ブライダルケアなど）をご利用される方限定で、モニター価格をご案内しています。募集は5組まで。施術前後の写真撮影やWEB・SNS等への掲載にご協力いただける方を募集しております。
                 </p>
                 <div className="bg-white/40 p-8 rounded-3xl border border-[#a67c52]/10 space-y-4">
                   <p className="text-xs text-[#a67c52] leading-relaxed">
-                    ※一度インターネット上に掲載された情報はSNSなどで拡散される可能性があり、クリニック側で全てを削除することはできません。ご理解の上、ご検討くださいませ。
+                    ※一度インターネット上に掲載された情報はSNSなどで拡散される可能性があり、当サロン側で全てを削除することはできません。ご理解の上、ご検討ください。
                   </p>
                   <p className="text-xs text-[#a67c52] leading-relaxed">
-                    ※ご状態によっては、モニターの適応外になる場合もございます。
+                    ※ご状態によっては、モニターの対象外となる場合もございます。
                   </p>
                 </div>
               </div>
@@ -154,14 +154,14 @@ export default function MonitorRecruitmentPage() {
                 aria-hidden
               />
               <h4 className="font-serif-jp text-2xl mb-8 font-bold tracking-widest relative z-10">
-                各施術のモニター料金について
+                モニター募集の対象について
               </h4>
               <div className="space-y-4 text-white/80 leading-loose font-serif-jp relative z-10">
-                <p>各施術のモニター料金につきましては、料金表からご確認ください。</p>
-                <p>なお、記載の料金は「部分モニター」となります。お間違えのないようご確認ください。</p>
+                <p>モニター価格は<strong className="text-white">初回体験をされた方</strong>かつ、<strong className="text-white">その後のカスタムコース（短期集中・ブライダルケア等）をご利用される方</strong>限定です。</p>
                 <p className="text-xl text-white font-bold">
-                  YouTubeモニターは通常料金から50%OFFいたします。
+                  募集人数は5組までとなります。
                 </p>
+                <p>料金の詳細は初回体験時またはカスタムメニューご契約時にご案内いたします。</p>
               </div>
             </div>
           </div>
@@ -201,69 +201,29 @@ export default function MonitorRecruitmentPage() {
           </div>
         </section>
 
-        <section id="モニターに応募" className="py-24 bg-white/50">
+        <section id="モニターに応募" className="py-24 bg-[#fafaf9]">
           <div className="container mx-auto px-4">
             <SectionHeader en="Apply" jp="モニターに応募する" />
 
-            <div className="max-w-4xl mx-auto bg-[#8c6239] p-1 rounded-[40px] shadow-2xl">
-              <div className="bg-white/5 p-12 rounded-[38px] text-center">
-                <h4 className="font-serif-jp text-2xl text-white mb-8 font-bold tracking-widest">
-                  応募方法について
-                </h4>
-                <div className="w-16 h-[1px] bg-[#f27d26] mx-auto mb-10" aria-hidden />
-                <div className="space-y-4 text-white/80 leading-loose font-serif-jp mb-12">
-                  <p>
-                    モニター応募は、下記のほかに電話予約・LINE予約・Web予約からも可能でございます。
-                  </p>
-                  <p>
-                    カウンセリング予約の際には、モニター希望である旨をお知らせくださいますようお願い申し上げます。
-                  </p>
-                </div>
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-white rounded-[32px] border border-[#a67c52]/10 shadow-sm p-10 md:p-14 text-center">
+                <p className="text-[#5a5a5a] leading-relaxed font-serif-jp mb-10">
+                  モニターご希望の方は、予約時に「モニター希望」とお伝えください。LINEからご予約いただけます。
+                </p>
 
-                <div className="bg-[#f5f2ed] p-12 rounded-[40px] shadow-inner relative overflow-hidden">
-                  <div className="absolute inset-0 opacity-5 pointer-events-none" aria-hidden>
-                    <BrainCircuit size={400} className="absolute -top-20 -right-20" />
-                    <BrainCircuit size={400} className="absolute -bottom-20 -left-20" />
-                  </div>
+                <a
+                  href="https://line.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#a67c52] hover:bg-[#8c6239] text-white py-4 px-10 rounded-full font-bold text-sm tracking-widest transition-all shadow-md"
+                >
+                  <MessageCircle size={20} aria-hidden />
+                  LINEで予約
+                </a>
 
-                  <div className="relative z-10">
-                    <p className="font-en-serif text-[#a67c52] text-6xl mb-4 italic">Reservation</p>
-                    <p className="font-serif-jp text-xl text-[#8c6239] mb-12 font-bold">
-                      無料カウンセリングのご相談はこちら
-                    </p>
-
-                    <div className="grid md:grid-cols-3 gap-6">
-                      <a
-                        href="tel:000-0000-0000"
-                        className="bg-white border border-[#8c6239]/30 p-6 rounded-full flex flex-col items-center justify-center hover:bg-white/80 transition-all group"
-                      >
-                        <span className="flex items-center space-x-2 text-[#8c6239] mb-1">
-                          <Phone size={20} aria-hidden />
-                          <span className="font-bold text-sm">電話予約はこちら</span>
-                        </span>
-                        <span className="text-[10px] text-[#8c6239]/60">受付時間：10:00 〜 19:00</span>
-                      </a>
-
-                      <a
-                        href="https://line.me"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-[#4a3a2a] text-white p-6 rounded-full flex items-center justify-center space-x-3 hover:bg-[#3a2a1a] transition-all shadow-lg"
-                      >
-                        <MessageCircle size={24} aria-hidden />
-                        <span className="font-bold text-sm tracking-widest">LINE予約はこちら</span>
-                      </a>
-
-                      <a
-                        href="#"
-                        className="bg-[#f27d26] text-white p-6 rounded-full flex items-center justify-center space-x-3 hover:bg-[#d96a1d] transition-all shadow-lg"
-                      >
-                        <Activity size={24} aria-hidden />
-                        <span className="font-bold text-sm tracking-widest">Web予約はこちら</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <p className="mt-6 text-xs text-[#1a1a1a]/50">
+                  受付時間 10:00〜19:00
+                </p>
               </div>
             </div>
           </div>

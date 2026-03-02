@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { Phone, MessageCircle, Instagram } from 'lucide-react';
-import { SALON_NAME, LINE_URL, TELEPHONE } from '@/lib/constants';
+import { MessageCircle, Instagram } from 'lucide-react';
+import { SALON_NAME, LINE_URL } from '@/lib/constants';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -27,7 +27,7 @@ export function Footer() {
                 <MessageCircle size={20} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/ninoude.fukuoka.emi/?hl=ja"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/40 hover:text-[#a67c52] transition-colors"
@@ -44,17 +44,17 @@ export function Footer() {
             </h3>
             <ul className="space-y-5 text-xs tracking-widest uppercase">
               <li>
-                <Link href="/#concept" className="hover:text-[#a67c52] transition-colors">
-                  Concept
+                <Link href="/" className="hover:text-[#a67c52] transition-colors">
+                  Top
                 </Link>
               </li>
               <li>
-                <Link href="/#results" className="hover:text-[#a67c52] transition-colors">
+                <Link href="/results" className="hover:text-[#a67c52] transition-colors">
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/#menu" className="hover:text-[#a67c52] transition-colors">
+                <Link href="/menu" className="hover:text-[#a67c52] transition-colors">
                   Menu
                 </Link>
               </li>
@@ -86,12 +86,6 @@ export function Footer() {
               Contact
             </h3>
             <div className="space-y-8">
-              <div className="flex items-center space-x-4">
-                <Phone size={16} className="text-[#a67c52]" aria-hidden />
-                <a href={`tel:${TELEPHONE}`} className="text-xl font-en-serif italic hover:text-[#a67c52]">
-                  {TELEPHONE}
-                </a>
-              </div>
               <a
                 href={LINE_URL}
                 target="_blank"

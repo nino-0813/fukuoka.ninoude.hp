@@ -94,7 +94,7 @@ export default function AccessPage() {
                   <span>LINEで予約・相談</span>
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/ninoude.fukuoka.emi/?hl=ja"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-14 h-14 border border-[#a67c52]/20 rounded-full flex items-center justify-center text-[#a67c52] hover:bg-[#f5f2ed] transition-all"

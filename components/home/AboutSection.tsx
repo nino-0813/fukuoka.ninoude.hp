@@ -19,7 +19,7 @@ export function AboutSection() {
           <div className="relative">
             <div className="rounded-[40px] overflow-hidden shadow-2xl z-10 relative aspect-[4/5]">
               <Image
-                src="https://picsum.photos/800/1000?therapy,skin,wellness"
+                src="/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_135.webp"
                 alt="二の腕施術・リンパケアのイメージ"
                 className="object-cover"
                 fill

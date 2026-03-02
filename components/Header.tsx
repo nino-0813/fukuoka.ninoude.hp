@@ -8,8 +8,8 @@ import { SALON_NAME } from '@/lib/constants';
 
 const NAV_ITEMS = [
   { href: '/', label: 'TOP', id: 'top' },
-  { href: '/#results', label: '症例写真', id: 'results' },
-  { href: '/#menu', label: 'メニュー', id: 'menu' },
+  { href: '/results', label: '症例写真', id: 'results' },
+  { href: '/menu', label: 'メニュー', id: 'menu' },
   { href: '/monitor-recruitment', label: 'モニター募集', id: 'monitor' },
   { href: '/access', label: 'アクセス', id: 'clinic' },
   { href: '/blog', label: 'ブログ', id: 'blog' },
@@ -29,6 +29,8 @@ export function Header() {
 
   const isMonitorPage = pathname === '/monitor-recruitment';
   const isBlogPage = pathname === '/blog';
+  const isResultsPage = pathname === '/results';
+  const isMenuPage = pathname === '/menu';
 
   return (
     <header
@@ -57,7 +59,10 @@ export function Header() {
               key={item.id}
               href={item.href}
               className={`text-xs font-bold transition-colors uppercase tracking-[0.2em] ${
-                (isMonitorPage && item.id === 'monitor') || (isBlogPage && item.id === 'blog')
+                (isMonitorPage && item.id === 'monitor') ||
+                (isBlogPage && item.id === 'blog') ||
+                (isResultsPage && item.id === 'results') ||
+                (isMenuPage && item.id === 'menu')
                   ? 'text-[#a67c52]'
                   : 'text-[#1a1a1a] hover:text-[#a67c52]'
               }`}

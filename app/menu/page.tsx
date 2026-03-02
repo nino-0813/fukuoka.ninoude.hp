@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Sparkles, Activity, Clock } from 'lucide-react';
 import { MENU_ITEMS } from '@/lib/constants';
+
+const FIRST_MENU_IMAGE = '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_135.webp';
+const CUSTOM_MENU_IMAGE = '/images/cases/LINE_ALBUM_Before%20%E3%83%BBafter_260302_135.webp';
 import { SectionHeader } from '@/components/SectionHeader';
 import { JsonLd } from '@/components/JsonLd';
 import { getBreadcrumbJsonLd } from '@/lib/schema';
@@ -12,10 +16,10 @@ const iconMap = { Sparkles, Activity, Clock } as const;
 export const metadata: Metadata = {
   title: 'メニュー・料金 | 二の腕痩せ 福岡 ジプソフィル',
   description:
-    '二の腕痩せ専門サロン ジプソフィル福岡店のメニュー・料金。初回体験¥5,500、短期集中コース、ブライダルケア。完全予約制。',
+    '二の腕痩せ専門サロン ジプソフィル福岡店のメニュー・料金。初回体験¥9,900。体験後はカスタムメニューが選べます。短期集中・ブライダルケア。完全予約制。',
   openGraph: {
     title: 'メニュー・料金 | 二の腕痩せ専門ジプソフィル®︎ 福岡',
-    description: '初回体験¥5,500〜。二の腕集中・ブライダルケア。福岡市東区完全予約制。',
+    description: '初回体験¥9,900。まずは体験から、その後カスタムメニューが選べます。福岡市東区完全予約制。',
     url: '/menu',
   },
   alternates: { canonical: `${BASE_URL}/menu` },
@@ -41,12 +45,12 @@ export default function MenuPage() {
           </nav>
         </div>
 
-        <header className="container mx-auto px-4 text-center mb-16">
+        <header className="container mx-auto px-4 text-center mb-12">
           <h1 className="font-serif-jp text-3xl md:text-4xl text-[#1a1a1a] tracking-widest">
             メニュー・料金
           </h1>
           <p className="mt-4 text-[#5a5a5a]">
-            二の腕痩せに特化したコースをご用意しています。初回は体験コースでお試しください。
+            まずは初回体験（¥9,900）から。体験終了後、お悩みに合わせたカスタムメニューがお選びいただけます。
           </p>
         </header>
 
@@ -62,16 +66,42 @@ export default function MenuPage() {
                   key={item.id}
                   className="group p-10 rounded-[40px] bg-white border border-[#a67c52]/10 hover:shadow-2xl transition-all flex flex-col text-center"
                 >
-                  <div className="w-20 h-20 bg-[#f5f2ed] rounded-full flex items-center justify-center mx-auto mb-8 text-[#a67c52]">
-                    <Icon size={32} aria-hidden />
+                  <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-8 shrink-0 relative bg-[#f5f2ed]">
+                    {item.id === 1 ? (
+                      <Image
+                        src={FIRST_MENU_IMAGE}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes="80px"
+                      />
+                    ) : item.id === 2 || item.id === 3 ? (
+                      <Image
+                        src={CUSTOM_MENU_IMAGE}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes="80px"
+                      />
+                    ) : (
+                      <span className="absolute inset-0 flex items-center justify-center text-[#a67c52]">
+                        <Icon size={32} aria-hidden />
+                      </span>
+                    )}
                   </div>
                   <h3 className="font-serif-jp text-xl text-[#1a1a1a] mb-4 font-bold tracking-widest">
                     {item.title}
                   </h3>
-                  <p className="text-[#a67c52] font-en-serif italic text-3xl mb-2">{item.price}</p>
-                  <p className="text-[10px] text-[#a67c52]/60 mb-8 uppercase tracking-[0.3em]">
-                    {item.duration}
-                  </p>
+                  {item.price ? (
+                    <>
+                      <p className="text-[#a67c52] font-en-serif italic text-3xl mb-2">{item.price}</p>
+                      <p className="text-[10px] text-[#a67c52]/60 mb-8 uppercase tracking-[0.3em]">
+                        {item.duration}
+                      </p>
+                    </>
+                  ) : (
+                    <p className="text-[#a67c52]/80 text-sm mb-8">初回体験後にご案内</p>
+                  )}
                   <p className="text-[#5a5a5a] text-sm leading-loose flex-1 mb-10 font-serif-jp">
                     {item.description}
                   </p>
