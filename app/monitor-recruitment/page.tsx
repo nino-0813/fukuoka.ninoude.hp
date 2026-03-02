@@ -6,6 +6,7 @@ import {
   MONITOR_TYPES,
   MONITOR_REQUIREMENTS,
   BASE_URL,
+  LINE_URL,
 } from '@/lib/constants';
 import { SectionHeader } from '@/components/SectionHeader';
 import { JsonLd } from '@/components/JsonLd';
@@ -94,14 +95,14 @@ export default function MonitorRecruitmentPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative">
-                <div className="curved-mask overflow-hidden shadow-2xl aspect-[5/6] relative">
+              <div className="relative max-w-sm lg:max-w-md mx-auto w-full min-h-[320px]">
+                <div className="curved-mask overflow-hidden shadow-2xl aspect-[5/6] relative w-full p-14">
                   <Image
-                    src="https://picsum.photos/1000/1200?photography,model,beauty"
+                    src="/images/monitor-hero.webp"
                     alt="モニター撮影のイメージ"
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 24rem"
                   />
                 </div>
               </div>
@@ -212,7 +213,7 @@ export default function MonitorRecruitmentPage() {
                 </p>
 
                 <a
-                  href="https://line.me"
+                  href={LINE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#a67c52] hover:bg-[#8c6239] text-white py-4 px-10 rounded-full font-bold text-sm tracking-widest transition-all shadow-md"

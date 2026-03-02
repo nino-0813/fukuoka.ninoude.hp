@@ -97,7 +97,7 @@ export default function BridalArmSlimPage() {
                 料金・メニューを見る
               </Link>
               <a
-                href="https://line.me"
+                href="https://lin.ee/DS9UvmW"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border border-[#a67c52] text-[#a67c52] px-10 py-4 rounded-full font-bold hover:bg-[#f5f2ed] transition-all text-sm"

@@ -18,7 +18,7 @@ export function StickyCta() {
         <span className="font-bold text-[10px] uppercase tracking-widest">Call</span>
       </a>
       <a
-        href="https://line.me"
+        href="https://lin.ee/DS9UvmW"
         target="_blank"
         rel="noopener noreferrer"
         className="flex-2 w-2/3 bg-[#a67c52] text-white py-4 rounded-full flex items-center justify-center space-x-2 shadow-lg"

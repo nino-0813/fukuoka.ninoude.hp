@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Clock, MessageCircle, Instagram } from 'lucide-react';
 import { LOCATION, HOURS, LINE_URL, BASE_URL } from '@/lib/constants';
@@ -107,12 +106,13 @@ export default function AccessPage() {
           </div>
 
           <div className="h-[400px] relative curved-mask">
-            <Image
-              src="https://picsum.photos/1000/600?fukuoka,interior,design"
-              alt="ジプソフィル 福岡店 外観・店内"
-              fill
-              className="object-cover"
-              sizes="100vw"
+            <iframe
+              src="https://www.google.com/maps?q=福岡県福岡市東区&output=embed"
+              title="福岡県福岡市東区の地図"
+              className="absolute inset-0 w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </section>

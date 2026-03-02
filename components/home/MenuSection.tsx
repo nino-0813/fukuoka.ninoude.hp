@@ -63,7 +63,7 @@ export function MenuSection() {
                 )}
                 <p className="text-[#5a5a5a] text-sm leading-loose flex-1 mb-10 font-serif-jp">{item.description}</p>
                 <Link
-                  href="https://line.me"
+                  href="https://lin.ee/DS9UvmW"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#a67c52] text-white py-4 rounded-full font-bold hover:bg-[#8c6239] transition-all tracking-widest text-xs uppercase block text-center"

@@ -70,7 +70,7 @@ const Header: React.FC<{ onPageChange: (page: string) => void, currentPage: stri
               {item.label}
             </button>
           ))}
-          <a href="https://line.me" className="bg-[#a67c52] text-white px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#8c6239] transition-all transform hover:scale-105 shadow-sm">
+          <a href="https://lin.ee/DS9UvmW" className="bg-[#a67c52] text-white px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#8c6239] transition-all transform hover:scale-105 shadow-sm">
             <MessageCircle size={16} />
             <span className="text-xs font-bold tracking-widest">LINE予約</span>
           </a>
@@ -105,7 +105,7 @@ const Header: React.FC<{ onPageChange: (page: string) => void, currentPage: stri
             </button>
           ))}
           <div className="flex flex-col w-full space-y-4 pt-8">
-            <a href="https://line.me" className="w-full bg-green-500 text-white py-4 rounded-xl flex justify-center items-center space-x-3 text-lg">
+            <a href="https://lin.ee/DS9UvmW" className="w-full bg-green-500 text-white py-4 rounded-xl flex justify-center items-center space-x-3 text-lg">
               <MessageCircle />
               <span>LINEで予約・相談</span>
             </a>
@@ -159,7 +159,7 @@ const Hero: React.FC = () => {
             <a href="#menu" className="bg-[#a67c52] text-white px-12 py-5 rounded-full text-sm font-bold hover:bg-[#8c6239] transition-all text-center shadow-lg transform hover:-translate-y-1 tracking-[0.2em] uppercase">
               View Menu
             </a>
-            <a href="https://line.me" className="bg-white/50 backdrop-blur-sm text-[#a67c52] border border-[#a67c52]/30 px-12 py-5 rounded-full text-sm font-bold hover:bg-white transition-all text-center tracking-[0.2em] uppercase">
+            <a href="https://lin.ee/DS9UvmW" className="bg-white/50 backdrop-blur-sm text-[#a67c52] border border-[#a67c52]/30 px-12 py-5 rounded-full text-sm font-bold hover:bg-white transition-all text-center tracking-[0.2em] uppercase">
               Contact Us
             </a>
           </div>
@@ -382,7 +382,7 @@ const MenuSection: React.FC = () => {
               <p className="text-[#5a5a5a] text-sm leading-loose flex-1 mb-10 font-serif-jp">
                 {item.description}
               </p>
-              <a href="https://line.me" className="bg-[#a67c52] text-white py-4 rounded-full font-bold hover:bg-[#8c6239] transition-all tracking-widest text-xs uppercase">
+              <a href="https://lin.ee/DS9UvmW" className="bg-[#a67c52] text-white py-4 rounded-full font-bold hover:bg-[#8c6239] transition-all tracking-widest text-xs uppercase">
                 Reserve Now
               </a>
             </div>
@@ -428,7 +428,7 @@ const ClinicInfo: React.FC = () => {
               </div>
               
               <div className="pt-10 flex space-x-6">
-                <a href="https://line.me" className="flex-1 bg-[#a67c52] text-white px-8 py-4 rounded-full flex items-center justify-center space-x-3 hover:bg-[#8c6239] transition-all shadow-lg text-xs font-bold uppercase tracking-widest">
+                <a href="https://lin.ee/DS9UvmW" className="flex-1 bg-[#a67c52] text-white px-8 py-4 rounded-full flex items-center justify-center space-x-3 hover:bg-[#8c6239] transition-all shadow-lg text-xs font-bold uppercase tracking-widest">
                   <MessageCircle size={18} />
                   <span>Line Booking</span>
                 </a>
@@ -590,7 +590,7 @@ const MonitorRecruitment: React.FC = () => {
             <div className="space-y-4 text-white/80 leading-loose font-serif-jp">
               <p>各施術のモニター料金につきましては、料金表からご確認ください。</p>
               <p>なお、記載の料金は「部分モニター」となります。お間違えのないようご確認ください。</p>
-              <p className="text-xl text-white font-bold">YouTubeモニターは通常料金から50%OFFいたします。</p>
+              <p className="text-xl text-white font-bold">Instagramモニターは通常料金から50%OFFいたします。</p>
             </div>
           </div>
         </div>
@@ -660,7 +660,7 @@ const MonitorRecruitment: React.FC = () => {
                       <span className="text-[10px] text-[#8c6239]/60">受付時間：10:00 〜 19:00</span>
                     </a>
                     
-                    <a href="https://line.me" className="bg-[#4a3a2a] text-white p-6 rounded-full flex items-center justify-center space-x-3 hover:bg-[#3a2a1a] transition-all shadow-lg">
+                    <a href="https://lin.ee/DS9UvmW" className="bg-[#4a3a2a] text-white p-6 rounded-full flex items-center justify-center space-x-3 hover:bg-[#3a2a1a] transition-all shadow-lg">
                       <MessageCircle size={24} />
                       <span className="font-bold text-sm tracking-widest">LINE予約はこちら</span>
                     </a>
@@ -719,7 +719,7 @@ const Footer: React.FC<{ onPageChange: (page: string) => void }> = ({ onPageChan
                 <Phone size={16} className="text-[#a67c52]" />
                 <span className="text-xl font-en-serif italic">000-0000-0000</span>
               </div>
-              <a href="https://line.me" className="inline-block bg-[#a67c52] text-white px-10 py-4 rounded-full font-bold hover:bg-[#8c6239] transition-all text-xs uppercase tracking-widest">
+              <a href="https://lin.ee/DS9UvmW" className="inline-block bg-[#a67c52] text-white px-10 py-4 rounded-full font-bold hover:bg-[#8c6239] transition-all text-xs uppercase tracking-widest">
                 Line Contact
               </a>
             </div>
@@ -743,7 +743,7 @@ const StickyCTA: React.FC = () => {
         <Phone size={18} />
         <span className="font-bold text-[10px] uppercase tracking-widest">Call</span>
       </a>
-      <a href="https://line.me" className="flex-2 w-2/3 bg-[#a67c52] text-white py-4 rounded-full flex items-center justify-center space-x-2 shadow-lg">
+      <a href="https://lin.ee/DS9UvmW" className="flex-2 w-2/3 bg-[#a67c52] text-white py-4 rounded-full flex items-center justify-center space-x-2 shadow-lg">
         <MessageCircle size={18} />
         <span className="font-bold text-[10px] uppercase tracking-widest">Line Booking</span>
       </a>

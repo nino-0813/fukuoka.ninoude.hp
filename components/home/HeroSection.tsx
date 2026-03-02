@@ -50,7 +50,7 @@ export function HeroSection() {
               View Menu
             </Link>
             <a
-              href="https://line.me"
+              href="https://lin.ee/DS9UvmW"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/50 backdrop-blur-sm text-[#a67c52] border border-[#a67c52]/30 px-12 py-5 rounded-full text-sm font-bold hover:bg-white transition-all text-center tracking-[0.2em] uppercase"

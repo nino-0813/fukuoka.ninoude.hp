@@ -106,7 +106,7 @@ export default function MenuPage() {
                     {item.description}
                   </p>
                   <a
-                    href="https://line.me"
+                    href="https://lin.ee/DS9UvmW"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#a67c52] text-white py-4 rounded-full font-bold hover:bg-[#8c6239] transition-all tracking-widest text-xs uppercase block text-center"

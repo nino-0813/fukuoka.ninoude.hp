@@ -71,7 +71,7 @@ export function Header() {
             </Link>
           ))}
           <a
-            href="https://line.me"
+            href="https://lin.ee/DS9UvmW"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#a67c52] text-white px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#8c6239] transition-all transform hover:scale-105 shadow-sm"
@@ -113,7 +113,7 @@ export function Header() {
           ))}
           <div className="flex flex-col w-full space-y-4 pt-8">
             <a
-              href="https://line.me"
+              href="https://lin.ee/DS9UvmW"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-green-500 text-white py-4 rounded-xl flex justify-center items-center space-x-3 text-lg"
