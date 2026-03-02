@@ -16,7 +16,7 @@ export const MONITOR_TYPES: MonitorType[] = [
   {
     id: 2,
     title: "全顔・YouTubeモニター",
-    description: "施術風景やビフォーアフターの様子を動画で撮影し、当院のYouTubeに公開させていただける方を対象とするのがYouTubeモニターです。原則として全顔出しモニターとなります。",
+    description: "施術風景やビフォーアフターの様子を動画で撮影し、当サロンのInstagramに公開させていただける方を対象とするのがYouTubeモニターです。原則として全顔出しモニターとなります。",
     image: "https://picsum.photos/600/400?face,beauty",
     note: "※通常料金から 50%OFFいたします。"
   }
@@ -79,7 +79,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 1,
     title: "初回体験コース",
     price: "¥5,500",
-    duration: "90分",
+    duration: "60分",
     description: "カウンセリング＋全身デトックス＋二の腕集中アプローチ。まずは効果を実感してください。",
     icon: "Sparkles"
   },

@@ -17,7 +17,7 @@ export function HeroSection() {
         <div className="max-w-2xl order-2 lg:order-1">
           <p className="mb-4">
             <span className="font-en-serif text-[#a67c52] text-xl italic tracking-wide">About</span>
-            <span className="text-sm text-[#a67c52]/60 mt-1 block">当院について</span>
+            <span className="text-sm text-[#a67c52]/60 mt-1 block">当サロンについて</span>
           </p>
 
           <h2 id="hero-heading" className="font-serif-jp text-4xl md:text-5xl lg:text-6xl leading-[1.3] md:leading-[1.4] mb-8 text-[#1a1a1a]">
@@ -31,9 +31,9 @@ export function HeroSection() {
 
           <div className="space-y-6 text-[#1a1a1a] max-w-lg">
             <p className="text-lg font-serif-jp leading-relaxed">
-              {SALON_NAME}は、美容医療を通じて
+              {SALON_NAME}は、美容を通じて
               <br />
-              お客様の人生をより豊かにすることを目指すクリニックです。
+              お客様の人生をより豊かにすることを目指すサロンです。
             </p>
             <p className="text-base leading-relaxed opacity-80">
               「お客様ファースト」の姿勢を大切にし、

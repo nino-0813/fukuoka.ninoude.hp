@@ -32,7 +32,7 @@ const Header: React.FC<{ onPageChange: (page: string) => void, currentPage: stri
   }, []);
 
   const navItems = [
-    { id: 'concept', label: '当院について', en: 'Concept' },
+    { id: 'concept', label: '当サロンについて', en: 'Concept' },
     { id: 'results', label: '症例写真', en: 'Results' },
     { id: 'menu', label: 'メニュー', en: 'Menu' },
     { id: 'monitor', label: 'モニター募集', en: 'Monitor' },
@@ -133,7 +133,7 @@ const Hero: React.FC = () => {
         <div className="max-w-2xl order-2 lg:order-1">
           <div className="mb-4">
             <span className="font-en-serif text-[#a67c52] text-xl italic tracking-wide">About</span>
-            <div className="text-sm text-[#a67c52]/60 mt-1">当院について</div>
+            <div className="text-sm text-[#a67c52]/60 mt-1">当サロンについて</div>
           </div>
           
           <h2 className="font-serif-jp text-4xl md:text-5xl lg:text-6xl leading-[1.3] md:leading-[1.4] mb-8 text-[#1a1a1a]">
@@ -146,8 +146,8 @@ const Hero: React.FC = () => {
           
           <div className="space-y-6 text-[#1a1a1a] max-w-lg">
             <p className="text-lg font-serif-jp leading-relaxed">
-              {SALON_NAME}は、美容医療を通じて<br />
-              お客様の人生をより豊かにすることを目指すクリニックです。
+              {SALON_NAME}は、美容を通じて<br />
+              お客様の人生をより豊かにすることを目指すサロンです。
             </p>
             <p className="text-base leading-relaxed opacity-80">
               「お客様ファースト」の姿勢を大切にし、<br />
@@ -536,7 +536,7 @@ const MonitorRecruitment: React.FC = () => {
               </p>
               <div className="bg-white/40 p-8 rounded-3xl border border-[#a67c52]/10 space-y-4">
                 <p className="text-xs text-[#a67c52] leading-relaxed">
-                  ※一度インターネット上に掲載された情報はSNSなどで拡散される可能性があり、クリニック側で全てを削除することはできません。ご理解の上、ご検討くださいませ。
+                  ※一度インターネット上に掲載された情報はSNSなどで拡散される可能性があり、当サロン側で全てを削除することはできません。ご理解の上、ご検討くださいませ。
                 </p>
                 <p className="text-xs text-[#a67c52] leading-relaxed">
                   ※ご状態によっては、モニターの適応外になる場合もございます。

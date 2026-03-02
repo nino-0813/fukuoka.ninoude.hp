@@ -145,7 +145,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 1,
     title: '初回体験コース',
     price: '¥9,900',
-    duration: '90分',
+    duration: '60分',
     description:
       'まずは初回体験から。カウンセリング＋全身デトックス＋二の腕集中アプローチ。体験後はお悩みに合わせたカスタムメニューをお選びいただけます。',
     icon: 'Sparkles',
