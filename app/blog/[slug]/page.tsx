@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
             {post.slug === 'stage-change-saeko' ? (
               <>
                 <p className="text-[15px]">
-                  こんにちは！当サロンは、二の腕痩せに特化したエステサロンとして、日々多くのお客様の「理想の自分」への変化をお手伝いしています。今回は、多くのお客様から「SNSで見ました！」「この本、気になっていました」とお声をいただく、当フランチャイズのオーナー・Yukiiko（ユキイコ）さんの著書『STAGE CHANGE! リズムワークで叶える、この先ずっとお金に困らない稼ぎ方』についてご紹介します。実はこの本、あの紗栄子さんが推薦文を寄せていることでも大きな話題となっているんです。
+                  こんにちは！当サロンは、二の腕痩せに特化したエステサロンとして、日々多くのお客様の「理想の自分」への変化をお手伝いしています。今回は、多くのお客様から「SNSで見ました！」「この本、気になっていました」とお声をいただく、当サロンのオーナー・Yukiiko（ユキイコ）さんの著書『STAGE CHANGE! リズムワークで叶える、この先ずっとお金に困らない稼ぎ方』についてご紹介します。実はこの本、あの紗栄子さんが推薦文を寄せていることでも大きな話題となっているんです。
                 </p>
 
                 <figure className="my-10">
@@ -136,14 +136,14 @@ export default async function BlogPostPage({ params }: Props) {
                     <div className="relative aspect-[4/5] max-w-[320px] mx-auto rounded-2xl overflow-hidden bg-[#f5f2ed]">
                       <Image
                         src={IMG_SAEKO_SUPPLEMENT}
-                        alt="紗栄子さんが当フランチャイズのサプリを紹介している様子"
+                        alt="紗栄子さんが当サロンのサプリを紹介している様子"
                         fill
                         className="object-contain"
                         sizes="320px"
                       />
                     </div>
                     <figcaption className="mt-3 text-center text-sm text-[#5a5a5a]">
-                      紗栄子さんが当フランチャイズのサプリを紹介
+                      紗栄子さんが当サロンのサプリを紹介
                     </figcaption>
                   </figure>
                 </section>
@@ -184,20 +184,20 @@ export default async function BlogPostPage({ params }: Props) {
                     3. 「自立したい」と願うすべての女性へ
                   </h2>
                   <p className="text-[15px] mb-4">
-                    書籍のサブタイトルには「お金に困らない稼ぎ方」とありますが、これは単なるノウハウ本ではありません。子育てをしながら、地方暮らしのパート主婦からスタートし、美容の技術を武器に自らの手で人生を切り拓いてきたYukiikoさんの実体験が詰まっています。当サロンも、その志を同じくするフランチャイズの一員として、「今の自分を変えたい」「経済的にも精神的にも自立して、輝きたい」と願う女性たちを、技術と心を込めたカウンセリングでサポートしています。
+                    書籍のサブタイトルには「お金に困らない稼ぎ方」とありますが、これは単なるノウハウ本ではありません。子育てをしながら、地方暮らしのパート主婦からスタートし、美容の技術を武器に自らの手で人生を切り拓いてきたYukiikoさんの実体験が詰まっています。当サロンも、その志を同じくする一員として、「今の自分を変えたい」「経済的にも精神的にも自立して、輝きたい」と願う女性たちを、技術と心を込めたカウンセリングでサポートしています。
                   </p>
                   <figure className="my-8">
                     <div className="relative aspect-[8/5] w-full rounded-2xl overflow-hidden bg-[#f5f2ed]">
                       <Image
                         src={IMG_TRAINING}
-                        alt="フランチャイズ研修の様子"
+                        alt="アップデート研修の様子"
                         fill
                         className="object-cover"
                         sizes="(max-width: 672px) 100vw, 672px"
                       />
                     </div>
                     <figcaption className="mt-3 text-center text-sm text-[#5a5a5a]">
-                      フランチャイズ研修の様子
+                      アップデート研修の様子
                     </figcaption>
                   </figure>
                 </section>
