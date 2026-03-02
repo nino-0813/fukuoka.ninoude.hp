@@ -16,7 +16,7 @@ export const MONITOR_TYPES: MonitorType[] = [
     title: '部分モニター',
     description:
       'ホームページ・SNSなどの媒体で、体の部位ごと、または片側だけなどを撮影したお写真を使用させていただくのが部分モニターです。施術前後のお写真は、比較的個人を特定されにくいモニターになります。',
-    image: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_1.webp',
+    image: '/images/cases/case-partial-monitor-1.webp',
     note: '※価格は、料金表のモニター料金をご確認ください。',
   },
   {
@@ -105,8 +105,8 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 6,
     title: '振袖・二の腕集中ケア',
-    beforeImg: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_15.webp',
-    afterImg: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_15.webp',
+    beforeImg: '/images/cases/case-bridal-arm-15.webp',
+    afterImg: '/images/cases/case-bridal-arm-15.webp',
     period: '2ヶ月',
     count: '6回',
     description: '振袖のときの見た目が気にならなくなりました。',
@@ -114,8 +114,8 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 7,
     title: '肩甲骨・二の腕まわり改善',
-    beforeImg: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_8.webp',
-    afterImg: '/images/cases/LINE_ALBUM_%E3%83%97%E3%83%AC%E8%8A%B1%E5%AB%81%E6%A7%98%F0%9F%91%B0%E2%80%8D%E2%99%80%EF%B8%8F_260302_8.webp',
+    beforeImg: '/images/cases/case-shoulder-8.webp',
+    afterImg: '/images/cases/case-shoulder-8.webp',
     period: '1.5ヶ月',
     count: '4回',
     description: '背中から腕まわりがすっきり。',
