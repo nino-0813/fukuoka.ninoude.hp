@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand: #a67c52;
+  --color-brand-dark: #8c6239;
+  --color-accent: #f27d26;
+  --color-bg: #f5f2ed;
+  --color-text: #1a1a1a;
+  --color-muted: #5a5a5a;
+}
+
+body {
+  font-family: var(--font-noto-sans), sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+.font-serif-jp {
+  font-family: var(--font-zen-old-mincho), serif;
+}
+
+.font-en-serif {
+  font-family: var(--font-cormorant), serif;
+}
+
+.section-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.curved-mask {
+  clip-path: ellipse(100% 100% at 100% 50%);
+}
+
+@media (max-width: 768px) {
+  .curved-mask {
+    clip-path: ellipse(150% 100% at 100% 50%);
+  }
+}
