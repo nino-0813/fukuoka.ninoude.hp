@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   { href: '/monitor-recruitment', label: 'モニター募集', id: 'monitor' },
   { href: '/access', label: 'アクセス', id: 'clinic' },
   { href: '/blog', label: 'ブログ', id: 'blog' },
-  { href: '/faq', label: 'よくある質問', id: 'faq' },
+  { href: '/about', label: '当サロンについて', id: 'about' },
 ];
 
 export function Header() {
@@ -31,6 +31,7 @@ export function Header() {
   const isBlogPage = pathname === '/blog';
   const isResultsPage = pathname === '/results';
   const isMenuPage = pathname === '/menu';
+  const isAboutPage = pathname === '/about';
 
   return (
     <header
@@ -62,7 +63,8 @@ export function Header() {
                 (isMonitorPage && item.id === 'monitor') ||
                 (isBlogPage && item.id === 'blog') ||
                 (isResultsPage && item.id === 'results') ||
-                (isMenuPage && item.id === 'menu')
+                (isMenuPage && item.id === 'menu') ||
+                (isAboutPage && item.id === 'about')
                   ? 'text-[#a67c52]'
                   : 'text-[#1a1a1a] hover:text-[#a67c52]'
               }`}

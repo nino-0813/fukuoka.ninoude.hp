@@ -74,6 +74,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/about" className="hover:text-[#a67c52] transition-colors">
+                  当サロンについて
+                </Link>
+              </li>
+              <li>
                 <Link href="/faq" className="hover:text-[#a67c52] transition-colors">
                   FAQ
                 </Link>
