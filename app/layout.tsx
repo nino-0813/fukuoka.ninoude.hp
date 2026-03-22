@@ -51,9 +51,10 @@ export const metadata: Metadata = {
     description: defaultDescription,
     images: [
       {
-        url: '/images/og/opengraph.png',
-        width: 1080,
-        height: 1350,
+        url: '/images/og/opengraph-card.jpg',
+        width: 1200,
+        height: 630,
+        type: 'image/jpeg',
         alt: `${SALON_NAME}のサロンイメージ`,
       },
     ],
@@ -62,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: defaultTitle,
     description: defaultDescription,
-    images: ['/images/og/opengraph.png'],
+    images: ['/images/og/opengraph-card.jpg'],
   },
   alternates: {
     canonical: BASE_URL,

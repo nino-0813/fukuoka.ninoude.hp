@@ -19,16 +19,17 @@ export const metadata: Metadata = {
     url: '/',
     images: [
       {
-        url: '/images/og/opengraph.png',
-        width: 1080,
-        height: 1350,
+        url: '/images/og/opengraph-card.jpg',
+        width: 1200,
+        height: 630,
+        type: 'image/jpeg',
         alt: '二の腕痩せ専門ジプソフィル®︎のサロンイメージ',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/images/og/opengraph.png'],
+    images: ['/images/og/opengraph-card.jpg'],
   },
 };
 
