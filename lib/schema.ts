@@ -28,7 +28,7 @@ export function getLocalBusinessJsonLd() {
     },
     sameAs: [LINE_URL, INSTAGRAM_URL].filter(Boolean),
     priceRange: '¥¥',
-    image: `${BASE_URL}/og-image.jpg`,
+    image: `${BASE_URL}/images/og/opengraph.png`,
   };
 }
 

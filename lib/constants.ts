@@ -2,7 +2,7 @@ import type { CaseStudy, MenuItem, FAQItem, MonitorType, MonitorRequirement } fr
 
 export const SALON_NAME = '二の腕痩せ専門ジプソフィル®︎';
 export const SALON_NAME_EN = 'Gypsofil';
-export const BASE_URL = 'https://ninoude-fukuoka.com';
+export const BASE_URL = 'https://www.ninoude-fukuoka.com';
 
 export const LOCATION = '福岡県福岡市東区の自宅サロン';
 export const HOURS = '平日・土曜 9:00～18:00 (ご希望に合わせて調整可)';
