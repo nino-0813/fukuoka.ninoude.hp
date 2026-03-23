@@ -34,6 +34,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${BASE_URL}/blog/${post.slug}`,
       type: 'article',
       publishedTime: post.date,
+      images: [
+        {
+          url: post.thumbnail || '/opengraph-image.png',
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} | ${SALON_NAME}`,
+      description: post.description,
+      images: [post.thumbnail || '/opengraph-image.png'],
     },
     alternates: { canonical: `${BASE_URL}/blog/${post.slug}` },
   };

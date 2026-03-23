@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BASE_URL } from '@/lib/constants';
 import { JsonLd } from '@/components/JsonLd';
 import { getFAQPageJsonLd } from '@/lib/schema';
 import { HeroSection } from '@/components/home/HeroSection';
@@ -16,21 +17,22 @@ export const metadata: Metadata = {
     title: '二の腕痩せ専門ジプソフィル®︎ | 福岡の二の腕ダイエット専門サロン',
     description:
       '福岡県福岡市東区にある二の腕痩せに特化した専門サロン。完全予約制のプライベートサロンです。',
-    url: '/',
+    url: BASE_URL,
     images: [
       {
-        url: '/images/og/opengraph-card.jpg',
+        url: '/opengraph-image.png',
         width: 1200,
         height: 630,
-        type: 'image/jpeg',
+        type: 'image/png',
         alt: '二の腕痩せ専門ジプソフィル®︎のサロンイメージ',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/images/og/opengraph-card.jpg'],
+    images: ['/opengraph-image.png'],
   },
+  alternates: { canonical: BASE_URL },
 };
 
 export default function HomePage() {

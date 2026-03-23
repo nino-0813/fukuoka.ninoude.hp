@@ -1,6 +1,16 @@
 import { BASE_URL, SALON_NAME, TELEPHONE, LINE_URL, INSTAGRAM_URL, FAQS } from './constants';
 import type { FAQItem } from './types';
 
+export function getWebSiteJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SALON_NAME,
+    url: BASE_URL,
+    inLanguage: 'ja-JP',
+  };
+}
+
 export function getLocalBusinessJsonLd() {
   return {
     '@context': 'https://schema.org',
@@ -28,7 +38,7 @@ export function getLocalBusinessJsonLd() {
     },
     sameAs: [LINE_URL, INSTAGRAM_URL].filter(Boolean),
     priceRange: '¥¥',
-    image: `${BASE_URL}/images/og/opengraph-card.jpg`,
+    image: `${BASE_URL}/opengraph-image.png`,
   };
 }
 

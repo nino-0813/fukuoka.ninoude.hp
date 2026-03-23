@@ -6,7 +6,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StickyCta } from '@/components/StickyCta';
 import { JsonLd } from '@/components/JsonLd';
-import { getLocalBusinessJsonLd } from '@/lib/schema';
+import { getLocalBusinessJsonLd, getWebSiteJsonLd } from '@/lib/schema';
 import { BASE_URL, SALON_NAME } from '@/lib/constants';
 
 const zenOldMincho = Zen_Old_Mincho({
@@ -34,6 +34,7 @@ const notoSansJP = Noto_Sans_JP({
 const defaultTitle = `${SALON_NAME} | 福岡の二の腕ダイエット専門サロン`;
 const defaultDescription =
   '福岡県福岡市東区にある二の腕痩せに特化した専門サロン。独自の技術で理想の細い二の腕を実現。完全予約制のプライベートサロンです。';
+const ogImagePath = '/opengraph-image.png';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -51,10 +52,10 @@ export const metadata: Metadata = {
     description: defaultDescription,
     images: [
       {
-        url: '/images/og/opengraph-card.jpg',
+        url: ogImagePath,
         width: 1200,
         height: 630,
-        type: 'image/jpeg',
+        type: 'image/png',
         alt: `${SALON_NAME}のサロンイメージ`,
       },
     ],
@@ -63,10 +64,21 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: defaultTitle,
     description: defaultDescription,
-    images: ['/images/og/opengraph-card.jpg'],
+    images: [ogImagePath],
   },
   alternates: {
     canonical: BASE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
   },
   verification: {
     google: 'xbClnrtHY9IMu4vpVugSEJ925t7K2BqYY_MMmkB9b10',
@@ -95,6 +107,7 @@ export default function RootLayout({
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
+        <JsonLd data={getWebSiteJsonLd()} />
         <JsonLd data={getLocalBusinessJsonLd()} />
         <Header />
         <main id="main" role="main">
