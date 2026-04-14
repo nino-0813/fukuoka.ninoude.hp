@@ -10,6 +10,15 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'ninoude-yase-fukuoka-esthe-homecare',
+    title: '福岡で二の腕痩せするなら？エステと自宅ケアの違いを専門家が解説',
+    description:
+      '二の腕が痩せない原因と、自宅ケアでできること・エステで変わりやすい理由、福岡でサロンを選ぶポイントまでを解説します。',
+    date: '2026-04-14',
+    thumbnail: '/images/blog/Educational_blog_image_showing_arm_fat_concern_Fr-1776171525280.png',
+    category: '二の腕痩せ',
+  },
+  {
     slug: 'ninoude-yasenai-kaiketsu',
     title: '二の腕が痩せない理由と、細くするための解決法',
     description:

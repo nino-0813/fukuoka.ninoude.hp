@@ -100,6 +100,20 @@ export default async function BlogPostPage({ params }: Props) {
                 day: 'numeric',
               })}
             </time>
+            {post.slug === 'ninoude-yase-fukuoka-esthe-homecare' && (
+              <figure className="mt-10 max-w-3xl mx-auto">
+                <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-[#f5f2ed]">
+                  <Image
+                    src={post.thumbnail}
+                    alt="福岡で二の腕痩せを目指す方へ"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 768px"
+                    priority
+                  />
+                </div>
+              </figure>
+            )}
           </div>
         </header>
 
@@ -116,7 +130,175 @@ export default async function BlogPostPage({ params }: Props) {
           </nav>
 
           <div className="space-y-10 text-[#1a1a1a] leading-[1.9]">
-            {post.slug === 'stage-change-saeko' ? (
+            {post.slug === 'ninoude-yase-fukuoka-esthe-homecare' ? (
+              <>
+                <p className="text-[15px]">
+                  「ダイエットしても二の腕だけ細くならない」「ノースリーブを着たいのに、腕が気になって自信が持てない」——
+                  そんなお悩みを抱えている方は多くいます
+                </p>
+                <p className="text-[15px]">
+                  二の腕は、顔や脚に比べて後回しにされがちな部位ですが、写真や後ろ姿、ドレス・半袖・ノースリーブを着たときに印象が出やすいパーツです。
+                  だからこそ「本気で二の腕痩せしたい」と思ったときには、自己流だけで続けるのか、プロに任せるのかを早めに見極めることが大切です。
+                </p>
+                <p className="text-[15px]">
+                  この記事では、二の腕が太く見えやすい原因、自宅ケアでできること、エステでケアするメリット、そして福岡で二の腕エステを選ぶポイントまでわかりやすく解説します。
+                </p>
+
+                <section>
+                  <h2 className="text-lg font-bold text-[#1a1a1a] mt-8 mb-4 pb-2 border-b border-[#e8e6e3]">
+                    二の腕が太くなる3つの原因
+                  </h2>
+
+                  <h3 className="font-bold mt-6 mb-2">1. 脂肪がつきやすく、落ちにくい</h3>
+                  <p className="text-[15px]">
+                    二の腕は日常生活の中で意識的に使う機会が少なく、見た目の変化を感じにくい部位です。体重が大きく変わっていなくても、腕まわりだけ「もたつく」「振袖肉が気になる」と感じる方もいます。
+                  </p>
+
+                  <h3 className="font-bold mt-6 mb-2">2. 姿勢の乱れで、腕まわりが大きく見える</h3>
+                  <p className="text-[15px]">
+                    巻き肩や猫背になると、肩から腕にかけてのラインが崩れやすくなります。実際には脂肪だけが原因ではなく、背中や肩甲骨まわりの硬さによって、二の腕がより太く見えてしまうケースもあります。
+                  </p>
+
+                  <h3 className="font-bold mt-6 mb-2">3. むくみや滞りでスッキリ見えない</h3>
+                  <p className="text-[15px]">
+                    デスクワーク、スマホ時間の長さ、運動不足などが重なると、肩まわりや腕まわりが重だるく感じやすくなります。こうした状態が続くと、見た目にもスッキリ感が出にくくなります。
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-lg font-bold text-[#1a1a1a] mt-10 mb-4 pb-2 border-b border-[#e8e6e3]">
+                    自宅ケアの限界とは
+                  </h2>
+                  <p className="text-[15px] mb-4">
+                    自宅でできる二の腕ケアには、筋トレ、ストレッチ、マッサージ、食事の見直しなどがあります。どれもムダではありませんし、習慣化できれば体づくりの土台になります。
+                  </p>
+                  <p className="text-[15px] mb-4">
+                    ただし「二の腕だけをどうにかしたい」という悩みに対しては、自宅ケアだけでは限界を感じる方も多いです。たとえば次のような壁が起きやすくなります。
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-[15px]">
+                    <li>正しい方法がわからない</li>
+                    <li>続けても変化が見えにくい</li>
+                    <li>肩や背中など関連部位まで自分ではケアしにくい</li>
+                    <li>イベントまでに間に合わせたいのにペースが読めない</li>
+                  </ul>
+                  <p className="text-[15px] mt-4">
+                    ブライダルや旅行、撮影など「この日までに整えたい」という目標がある場合は、自己流だけで進めるより、最初から専門家に相談した方が遠回りになりにくいこともあります。
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-lg font-bold text-[#1a1a1a] mt-10 mb-4 pb-2 border-b border-[#e8e6e3]">
+                    エステで二の腕痩せができる理由
+                  </h2>
+                  <p className="text-[15px]">
+                    エステの強みは、単に腕だけを見るのではなく、肩・背中・姿勢・めぐり・見た目のラインまで含めて全体で考えられることです。
+                  </p>
+                  <p className="text-[15px] mt-4">
+                    自己流のケアは「腕だけ」「筋トレだけ」になりがちですが、プロの施術では、二の腕が太く見える原因を整理しながら必要な部位へアプローチしやすくなります。
+                    特に「写真で見ると太い」「肩まわりから厚い」「背中も気になる」という方は、腕単体ではなく上半身全体の見え方を整える視点が大切です。
+                  </p>
+                  <p className="text-[15px] mt-4">
+                    また、サロンではカウンセリングを通じて、悩みの期間や目標時期に合わせた提案が受けられるため、「何をどれくらい続ければいいか」が見えやすいのもメリットです。
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-lg font-bold text-[#1a1a1a] mt-10 mb-4 pb-2 border-b border-[#e8e6e3]">
+                    ジプソフィルの施術について
+                  </h2>
+                  <p className="text-[15px]">
+                    福岡の二の腕痩せ専門ジプソフィルは、二の腕特化技術を掲げるサロンで、オールハンド・筋膜リリース・リンパドレナージュを強みとしています。
+                    来店されるお客様の悩みとしては「ダイエットしても二の腕だけ痩せない」「ジムに通っても変わらない」「ドレスが似合うラインにしたい」といった声が多いです。
+                  </p>
+                  <p className="text-[15px] mt-4">
+                    初回体験コースは60分・9,900円で、カウンセリング＋全身デトックス＋二の腕集中アプローチ。体験後はお悩みに合わせたカスタムメニューをご案内します。
+                  </p>
+                  <p className="text-[15px] mt-4">
+                    福岡店は福岡市東区の完全予約制プライベートサロン。詳細住所はご予約確定後にご案内します。
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-lg font-bold text-[#1a1a1a] mt-10 mb-4 pb-2 border-b border-[#e8e6e3]">
+                    福岡で二の腕エステを選ぶポイント
+                  </h2>
+                  <ol className="list-decimal pl-6 space-y-3 text-[15px]">
+                    <li>
+                      <strong>二の腕に特化しているか</strong>
+                      <br />
+                      全身痩身がメインのサロンより、二の腕悩みに強いサロンの方が相談しやすく、比較もしやすくなります。
+                    </li>
+                    <li>
+                      <strong>症例やビフォーアフターがあるか</strong>
+                      <br />
+                      「どんな悩みの人が、どれくらいの期間で、どう変わったか」が見えるとイメージに近い結果を想像しやすくなります。
+                    </li>
+                    <li>
+                      <strong>カウンセリングが丁寧か</strong>
+                      <br />
+                      二の腕は人によって原因が違います。目標時期を聞いたうえで提案してくれるかが重要です。
+                    </li>
+                    <li>
+                      <strong>通いやすさ・相談しやすさがあるか</strong>
+                      <br />
+                      完全予約制、プライベート空間、LINE相談のしやすさなどは継続のしやすさにもつながります。
+                    </li>
+                  </ol>
+                </section>
+
+                <section>
+                  <h2 className="text-lg font-bold text-[#1a1a1a] mt-10 mb-4 pb-2 border-b border-[#e8e6e3]">
+                    よくある質問
+                  </h2>
+                  <div className="space-y-6 text-[15px]">
+                    <div>
+                      <p className="font-bold">Q. 何回くらいで変化を実感できますか？</p>
+                      <p className="mt-2">
+                        個人差はありますが、まずは「1回での変化」を体感し、目標に合わせて継続回数やペースを一緒に決めていくのがおすすめです。
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-bold">Q. 痛みはありますか？</p>
+                      <p className="mt-2">
+                        滞りがある箇所は痛みを感じる場合がありますが、強さは体調やお好みに合わせて調整します。
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-bold">Q. 運動や食事制限は必要ですか？</p>
+                      <p className="mt-2">
+                        過度な制限は不要です。施術効果を高めるための簡単なホームケアや食事のコツをお伝えします。
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <section className="mt-10 rounded-2xl border border-[#e8e6e3] bg-white p-6">
+                  <h2 className="text-lg font-bold text-[#1a1a1a] mb-3">
+                    初回体験のご予約はこちら
+                  </h2>
+                  <p className="text-[15px] text-[#5a5a5a] leading-relaxed">
+                    「自己流では限界を感じている」「夏までに二の腕をすっきり見せたい」「ブライダルに向けて、後ろ姿まで整えたい」
+                    ——そんな方は、まずは一度プロに相談してみませんか？
+                  </p>
+                  <div className="mt-5 flex flex-col sm:flex-row gap-3">
+                    <Link
+                      href="/monitor-recruitment#%E5%88%9D%E5%9B%9E%E4%BD%93%E9%A8%93%E3%81%AE%E3%81%94%E4%BA%88%E7%B4%84"
+                      className="inline-flex items-center justify-center bg-[#a67c52] text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-[#8c6239] transition-colors"
+                    >
+                      予約フォームへ
+                    </Link>
+                    <a
+                      href="https://lin.ee/DS9UvmW"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center bg-white text-[#a67c52] border border-[#a67c52]/30 px-6 py-3 rounded-full font-bold text-sm hover:bg-[#f5f2ed] transition-colors"
+                    >
+                      LINEで相談する
+                    </a>
+                  </div>
+                </section>
+              </>
+            ) : post.slug === 'stage-change-saeko' ? (
               <>
                 <p className="text-[15px]">
                   こんにちは！当サロンは、二の腕痩せに特化したエステサロンとして、日々多くのお客様の「理想の自分」への変化をお手伝いしています。今回は、多くのお客様から「SNSで見ました！」「この本、気になっていました」とお声をいただく、当サロンのオーナー・Yukiiko（ユキイコ）さんの著書『STAGE CHANGE! リズムワークで叶える、この先ずっとお金に困らない稼ぎ方』についてご紹介します。実はこの本、あの紗栄子さんが推薦文を寄せていることでも大きな話題となっているんです。
