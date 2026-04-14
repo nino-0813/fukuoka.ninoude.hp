@@ -24,7 +24,7 @@ export function StickyCta() {
         className="flex-2 w-2/3 bg-[#a67c52] text-white py-4 rounded-full flex items-center justify-center space-x-2 shadow-lg"
       >
         <MessageCircle size={18} aria-hidden />
-        <span className="font-bold text-[10px] uppercase tracking-widest">Line Booking</span>
+        <span className="font-bold text-[10px] tracking-widest">LINE予約</span>
       </a>
     </div>
   );

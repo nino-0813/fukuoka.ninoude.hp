@@ -63,12 +63,10 @@ export function MenuSection() {
                 )}
                 <p className="text-[#5a5a5a] text-sm leading-loose flex-1 mb-10 font-serif-jp">{item.description}</p>
                 <Link
-                  href="https://lin.ee/DS9UvmW"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="bg-[#a67c52] text-white py-4 rounded-full font-bold hover:bg-[#8c6239] transition-all tracking-widest text-xs uppercase block text-center"
+                  href="/monitor-recruitment#%E5%88%9D%E5%9B%9E%E4%BD%93%E9%A8%93%E3%81%AE%E3%81%94%E4%BA%88%E7%B4%84"
                 >
-                  Reserve Now
+                  今すぐ予約
                 </Link>
               </article>
             );

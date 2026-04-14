@@ -97,7 +97,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="inline-block bg-[#a67c52] text-white px-10 py-4 rounded-full font-bold hover:bg-[#8c6239] transition-all text-xs uppercase tracking-widest"
               >
-                Line Contact
+                LINEでお問い合わせ
               </a>
             </div>
           </div>

@@ -50,7 +50,7 @@ export function ClinicSection() {
                   className="flex-1 bg-[#a67c52] text-white px-8 py-4 rounded-full flex items-center justify-center space-x-3 hover:bg-[#8c6239] transition-all shadow-lg text-xs font-bold uppercase tracking-widest"
                 >
                   <MessageCircle size={18} aria-hidden />
-                  <span>Line Booking</span>
+                  <span>LINEで予約</span>
                 </a>
                 <a
                   href="https://www.instagram.com/ninoude.fukuoka.emi/?hl=ja"
