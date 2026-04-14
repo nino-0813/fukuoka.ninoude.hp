@@ -31,7 +31,7 @@ export function HeroSection() {
             background-size: 100% 100%;
           }
           .heroBg1 {
-            background-image: url('/images/about/beige-flyer-a4.png');
+            background-image: url('/images/about/1.svg');
           }
         }
       `}</style>
